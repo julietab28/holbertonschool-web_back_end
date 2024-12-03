@@ -2,7 +2,7 @@
 import math
 
 
-def to_str(n: float) -> float:
+def to_str(n: float) -> str:
     """
     Converts the integer part of a float into string
 
