@@ -6,7 +6,7 @@ def add(a: float, b: float) -> float:
     and return their sum
 
     Args:
-    a: float
-    b: float
+        a: float
+        b: float
     """
     return a + b
