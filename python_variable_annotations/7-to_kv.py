@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-from typing import Union
+from typing import Union, Tuple
 import math
 
 
-def to_kv(k:str, v: Union[int, float]) -> tuple:
+def to_kv(k:str, v: Union[int, float]) -> Tuple[str, float]:
     """
     Takes two arguments and returns a tuple with
     the arguments as elements of it
