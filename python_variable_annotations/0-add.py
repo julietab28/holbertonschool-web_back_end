@@ -1,4 +1,8 @@
 #!/usr/bin/env python3
+"""
+This module creates a function Add
+"""
+
 
 def add(a: float, b: float) -> float:
     """
