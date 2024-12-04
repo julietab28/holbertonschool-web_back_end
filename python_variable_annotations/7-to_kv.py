@@ -9,4 +9,4 @@ def to_kv(k:str, v: Union[int, float]) -> Tuple[str, float]:
     the arguments as elements of it
     """
     square: float = math.sqrt(v)
-    return (k, square)
+    return (k, float(square))
