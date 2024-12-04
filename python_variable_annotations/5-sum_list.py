@@ -9,7 +9,7 @@ def sum_list(input_list: list[float]) -> float:
     Args:
         input_list: list
     """
-    nums = 0.0
+    nums: float = 0.0
     for num in input_list:
         nums += num
     return nums
