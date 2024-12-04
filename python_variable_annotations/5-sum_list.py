@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
+from typing import List
 
-
-def sum_list(input_list: list[float]) -> float:
+def sum_list(input_list: List[float]) -> float:
     """
     This function takes a list of float as an argument and
     return the sum of all the elements of the list as a float
