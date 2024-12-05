@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Module documentation
+Module that delays
 """
 import asyncio, random
 
