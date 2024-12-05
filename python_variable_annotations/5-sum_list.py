@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-from typing import List
 """
 This module creates a function sum_list
 """
+from typing import List
 
 
 def sum_list(input_list: List[float]) -> float:

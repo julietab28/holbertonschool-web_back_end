@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-import math
 """
 This module creates a function to_str
 """
+import math
 
 
 def to_str(n: float) -> str:
