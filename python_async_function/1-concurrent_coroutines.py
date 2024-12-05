@@ -2,11 +2,21 @@
 """
 Module that delays
 """
+
+
 import importlib,asyncio
 wait_random = importlib.import_module('0-basic_async_syntax').wait_random
 from typing import List
 
 async def wait_n(n: int, max_delay: int) -> List[float]:
+    """
+    This function takes two arguments and returns a List
+    that contains n floats and are ordered asc
+
+    Args:
+        n: int
+        max_delay: int
+    """
     list_delay = []
     list_tareas = []
     for i in range(n):
