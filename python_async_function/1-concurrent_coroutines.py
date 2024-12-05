@@ -2,11 +2,10 @@
 """
 Module that delays
 """
-
-
-import importlib,asyncio
+import importlib, asyncio
 wait_random = importlib.import_module('0-basic_async_syntax').wait_random
 from typing import List
+
 
 async def wait_n(n: int, max_delay: int) -> List[float]:
     """
