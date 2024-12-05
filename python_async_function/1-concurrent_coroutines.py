@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
+import importlib, asyncio
+wait_random = importlib.import_module('0-basic_async_syntax').wait_random
 """
 Module that delays
 """
-import importlib, asyncio
-wait_random = importlib.import_module('0-basic_async_syntax').wait_random
 from typing import List
 
 
