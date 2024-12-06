@@ -2,7 +2,8 @@
 """
 Module that delays
 """
-import importlib, asyncio
+import importlib
+import asyncio
 wait_random = importlib.import_module('0-basic_async_syntax').wait_random
 
 
