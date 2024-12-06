@@ -7,6 +7,7 @@ import importlib
 from typing import List
 task_wait_random = importlib.import_module('0-basic_async_syntax').wait_random
 
+
 async def task_wait_n(n: int, max_delay: int) -> List[float]:
     """
     This function takes two arguments and returns a List
