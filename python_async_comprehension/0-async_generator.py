@@ -1,11 +1,13 @@
 #!/usr/bin/env python3
 """
+Module of the function async_generator
 """
 import asyncio
 import random
+from typing import AsyncGenerator
 
 
-async def async_generator():
+async def async_generator() -> AsyncGenerator[None]:
     """
     Function that returns a list of random numbers
     between 0 and 10
