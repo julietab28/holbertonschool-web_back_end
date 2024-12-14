@@ -4,12 +4,12 @@ Module of the function
 """
 import importlib
 import asyncio
-import typing
+from typing import List
 import random
 async_generator = importlib.import_module('0-async_generator').async_generator
 
 
-async def async_comprehension() ->:
+async def async_comprehension() -> List[float]:
     """
     Async comprehension
     """
