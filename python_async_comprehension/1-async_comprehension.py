@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 """
 Module of the function
 """
@@ -9,7 +9,7 @@ import random
 async_generator = importlib.import_module('0-async_generator').async_generator
 
 
-async def async_comprehension():
+async def async_comprehension() ->:
     """
     Async comprehension
     """
