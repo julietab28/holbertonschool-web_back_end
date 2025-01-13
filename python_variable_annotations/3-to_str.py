@@ -13,8 +13,7 @@ def to_str(n: float) -> str:
     of the float and converts the integer into string
 
     Args:
-        n: float 
-        txt = math.floor(n)
+        n: float
     """
-    
+
     return str(n)
