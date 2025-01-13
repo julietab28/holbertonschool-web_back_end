@@ -14,6 +14,7 @@ def to_str(n: float) -> str:
 
     Args:
         n: float 
+        txt = math.floor(n)
     """
-    txt = math.floor(n)
-    return str(txt)
+    
+    return str(n)
