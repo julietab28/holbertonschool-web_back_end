@@ -6,7 +6,7 @@ const app = http.createServer((req, res) => {
 });
 
 app.listen(1242, () => {
-  console.log("...");
+  console.log('...');
 });
 
 module.exports = app;
