@@ -16,7 +16,7 @@ function countStudents(path) {
       const field = fields[headers.indexOf('field')];
       const firstName = fields[headers.indexOf('firstname')];
 
-      if (field && firstName) {
+      if (field && firstName){
 
         if (!studentsByField[field]) {
           studentsByField[field] = [];
