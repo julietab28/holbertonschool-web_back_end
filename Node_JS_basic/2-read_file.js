@@ -16,15 +16,14 @@ function countStudents(path) {
       const field = fields[headers.indexOf('field')];
       const firstName = fields[headers.indexOf('firstname')];
 
-      if (!field || !firstName) {
-        continue;
-      }
+      if (field && firstName) {
 
-      if (!studentsByField[field]) {
-        studentsByField[field] = [];
-      }
+        if (!studentsByField[field]) {
+          studentsByField[field] = [];
+        }
 
-      studentsByField[field].push(firstName);
+        studentsByField[field].push(firstName);
+      }
     }
 
     console.log(`Number of students: ${lines.length - 1}`);
