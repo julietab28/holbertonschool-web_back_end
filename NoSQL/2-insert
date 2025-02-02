@@ -1,3 +1,3 @@
 //my commenjt
 
-db.school.insert({name: "Holerton School"})
+db.school.insert({name: "Holerton school"})
