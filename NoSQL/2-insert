@@ -1,4 +1,12 @@
-// my comment
-db.school.insertOne({
-    name: "Holberton School"
-})
+#!/usr/bin/env python3
+from pymongo import MongoClient
+import sys
+
+db_name = sys.argv[1]
+
+client = MongoClient('localhost', 27017)
+db = client[database_name]
+collection = db.school
+
+document = {"name": "Holberton school"}
+collection.insert_one(document)
