@@ -1,0 +1,3 @@
+// my commnet
+
+db.school.deleteMany({name: "Holberton school"})
