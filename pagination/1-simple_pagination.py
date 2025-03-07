@@ -40,7 +40,7 @@ class Server:
         Return the elements of the page
         """
         assert isinstance(page, int) and isinstance(page_size, int), "must be an integer"
-        page < 0 and page_size < 0, "must be grater than 0"
+        assert page < 0 and page_size < 0, "must be grater than 0"
         
         page_i, page_f = index_range(page, page_size)
         return self.dataset()[page_i:page_f]
