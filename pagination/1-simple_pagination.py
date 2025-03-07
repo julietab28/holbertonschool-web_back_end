@@ -40,9 +40,9 @@ class Server:
         """
         
         """
-        assert isinstance(page, int)
-        assert isinstance(page_size, int)
-        page <= 0 and page_size <= 0
+        assert isinstance(page, int), "must be integrer"
+        assert isinstance(page_size, int), "must be integer"
+        page < 0 and page_size < 0, "must be grater than 0"
         
         page_i, page_f = index_range(page, page_size)
         return self.dataset()[page_i:page_f]
