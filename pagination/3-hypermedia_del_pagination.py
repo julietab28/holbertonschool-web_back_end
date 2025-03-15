@@ -43,7 +43,7 @@ class Server:
 
     def get_hyper_index(self, index: int = None, page_size: int = 10) -> Dict:
         """
-        Funcion que returna un diccionario con la informacion de la pagina     
+        Funcion que returna un diccionario con la informacion de la pagina
         """
         assert isinstance(index, int)
         assert index >= 0 and index < len(self.indexed_dataset())
