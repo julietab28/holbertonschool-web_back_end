@@ -51,7 +51,7 @@ class Server:
         """
         Function that returns a dictionary with pagination info
         """
-        total_pages: int = math.ceil(len(self.dataset()) / page_size) 
+        total_pages: int = math.ceil(len(self.dataset()) / page_size)
         next_page: int = page + 1 if page < total_pages else None
         prev_page: int = page - 1 if page > 1 else None
         return {
