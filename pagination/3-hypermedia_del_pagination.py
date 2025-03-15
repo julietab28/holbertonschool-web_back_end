@@ -9,7 +9,8 @@ from typing import List, Dict
 
 
 class Server:
-    """Server class to paginate a database of popular baby names.
+    """
+    Server class to paginate a database of popular baby names.
     """
     DATA_FILE = "Popular_Baby_Names.csv"
 
@@ -29,7 +30,8 @@ class Server:
         return self.__dataset
 
     def indexed_dataset(self) -> Dict[int, List]:
-        """Dataset indexed by sorting position, starting at 0
+        """
+        Dataset indexed by sorting position, starting at 0
         """
         if self.__indexed_dataset is None:
             dataset = self.dataset()
@@ -40,16 +42,19 @@ class Server:
         return self.__indexed_dataset
 
     def get_hyper_index(self, index: int = None, page_size: int = 10) -> Dict:
+        """
+        Funcion que returna un diccionario con la informacion de la pagina        
+        """
         assert isinstance(index, int)
         assert index >= 0 and index < len(self.indexed_dataset())
 
         assert isinstance(page_size, int)
-            
+
         data = []
         new_index = index
         i_dataset = self.indexed_dataset()
         count = 0
-            
+   
         while count < page_size and new_index in i_dataset:
             data.append(i_dataset[new_index])
             count += 1
