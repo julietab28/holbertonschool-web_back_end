@@ -43,7 +43,7 @@ class Server:
 
     def get_hyper_index(self, index: int = None, page_size: int = 10) -> Dict:
         """
-        Funcion que returna un diccionario con la informacion de la pagina        
+        Funcion que returna un diccionario con la informacion de la pagina     
         """
         assert isinstance(index, int)
         assert index >= 0 and index < len(self.indexed_dataset())
@@ -54,7 +54,7 @@ class Server:
         new_index = index
         i_dataset = self.indexed_dataset()
         count = 0
-   
+
         while count < page_size and new_index in i_dataset:
             data.append(i_dataset[new_index])
             count += 1
